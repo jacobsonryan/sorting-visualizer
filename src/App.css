@@ -1,0 +1,142 @@
+.badge {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+.bg {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+  } */
+
+.colorBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.color {
+    float: right;
+    margin-top: 4px;
+
+}
+
+.footer p {
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+i {
+    color: white;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    text-align: center;
+    float: right;
+    color: black;
+}
+
+.complex {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.nav{
+    display: flex;
+    margin: 0 auto;
+    z-index: 1000;
+}
+
+.countLabel {
+    color: white;
+    text-align: left;
+    float: left;
+}
+
+.digits {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    bottom: 20px;
+    font-size: 15px;
+    margin: 0 15px; 
+    transform: rotateX(180deg);
+}
+
+.title {
+    text-align: center;
+    color: rgb(33, 37, 41);
+}
+
+.numbers {
+    display: flex;
+    justify-content:center;
+    transform: rotate(180deg) rotateY(180deg);
+    margin-top: 30px;
+    height: 500px;
+    position:absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    margin: auto;
+    z-index: -1;
+    width: 80vw; 
+}
+
+.number {
+    margin: 0px 1px;
+    /* transition: background-color 100ms ease-in; */
+    border-radius: 2px;
+}
+
+button {
+    margin: 10px;
+}
+
+.buttons {
+    display: flex;
+    float: right;
+    text-align: right;
+    align-items: center;
+}
+
+@media only screen and (max-width: 991px) {
+    .buttons {
+        width: 100%;
+        flex-wrap: wrap;
+        display: inline;
+        text-align: right;
+        text-align: center;
+        align-content: flex-start;
+        justify-content: center;
+    }
+
+    button {
+        float: right;
+        text-align: right;
+    }
+
+    .colorBox {
+        float: right;
+    }
+
+    .numbers {
+        width: 85vw;
+    }
+}
